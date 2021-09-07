@@ -1,0 +1,19 @@
+name: InvWeight
+version: '${project.version}'
+main: me.danh.InventoryWeight.InventoryWeight
+api-version: 1.13
+prefix: CanNang
+load: STARTUP
+authors: [ VoChiDanh ]
+description: Add weight to player
+softdepend: [PlaceholderAPI]
+commands:
+  iw:
+    usage: /iw [help, weight, get] are the available commands
+permissions:
+  inventoryweight.reload:
+    description: Can use the reload command to update the configuration file
+    default: op
+  inventoryweight.off:
+    description: If this is set a player will not have their weight monitored or their speed changed
+    default: false
